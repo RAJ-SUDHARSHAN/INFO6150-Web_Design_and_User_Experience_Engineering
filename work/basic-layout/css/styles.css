@@ -1,0 +1,62 @@
+.menu{
+    margin: 0;
+    padding: 15px;
+    background-color: plum;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: rebeccapurple;
+}
+
+footer{
+    background-color: plum;
+    margin: 0;
+    padding: 15px;
+}
+
+#homepage{
+    background-color: pink;
+    border-bottom: 1px solid black;
+}
+
+.local-menu li:hover{
+    background-color: plum;
+    cursor: pointer;
+}
+
+.local-menu{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.local-menu ul{
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.local-menu li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+}
+
+main{
+    display: inline-block;
+    width: 75%;
+    padding-left: 20px;
+    vertical-align: top;
+    border-left: 1px solid black;
+}
