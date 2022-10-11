@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Basic-Form</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <header>
+            <h1>Subscription Questionnaire</h1>
+        </header>
+        <main>
+            <form action="/submit" method="POST">
+                <label class="name">
+                    <span>Name:</span>
+                    <input type="text" name="name" required>
+                </label>
+                <label class="email">
+                    <span>Email:</span>
+                    <input type="email" name="email" required>
+                    <!-- <input type="text" name="email" required> -->
+                </label>
+                <div class="line-break"></div>
+                <label class="checkbox">
+                    <span>Do you want us to send you annoying emails?</span>
+                    <input type="checkbox" name="annoy_me" checked>
+                </label>
+                <label class="tier">
+                    <span>Select Tier</span>
+                    <select name="tier" required>
+                        <option value=""></option>
+                        <option value="" selected>Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+                <div class="line-break"></div>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <ul class="footer__menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Basic-Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Please complete and submit the below form</h1>
+    </header>
+    <main>
+        <form action="/submit" method="POST">
+            <div class="text_container">
+                <div class="name">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" required>
+                    </label>
+                </div>
+                <div class="email">
+                    <label>
+                        <span>Email</span>
+                        <input type="text" name="email" required>
+                    </label>
+                </div>
+            </div>
+            <div class="checkbox">
+            <label>
+                <span>Do you want us to send you annoying emails?</span>
+                <input type="checkbox" name="annoy_me" checked>
+            </label>
+        </div>
+        <div class="dropdown">
+            <label>
+                <span>Select Tier</span>
+                <select name="tier" required>
+                    <option value=""></option>
+                    <option value="" selected>Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+            </label>
+        </div>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html> -->
