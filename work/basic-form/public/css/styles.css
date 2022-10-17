@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #e2f7f1;
+    font-family: sans-serif;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    align-items: center;
+}
+
+
+.main_container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: auto;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.footer__menu {
+    padding: 1rem;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+    align-items: center;
+}
+
+.footer__menu>li {
+    padding: 10px;
+
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 50rem) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 2;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .line-break {
+        width: 100%;
+      }
+    
+    .main_container {
+        text-align: center;
+    }
+    
+    .name {
+        margin: 15px;
+    }
+    .email {
+        margin: 15px;
+    }
+    .checkbox {
+        margin: 15px;
+    }
+    .tier {
+        margin: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    button {
+        padding: auto;
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+
+    .footer__menu {
+        grid-column: 4 / 10;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
