@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Register</title>
+</head>
+
+<body>
+        <header class="header">
+            <div class="logo_header__container">
+                <a href="index.html">
+                    <img src="images/hans-jurgen-mager-qQWV91TTBrE-unsplash.jpg" alt="">
+                </a>
+                <h1>Register</h1>
+            </div>
+            <nav class="globalnav">
+                <ul class="globalnav__menu">
+                    <li class="globalnav__item"><a href="index.html">Home</a></li>
+                    <li class="globalnav__item"><a href="about.html">About</a></li>
+                    <li class="globalnav__item"><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/register" method="post">
+                <label class="name">
+                    <span class="req">*</span>
+                    <span>Name: </span>
+                    <input type="text" name="name" required>
+                </label>
+                <label class="email">
+                    <span class="req">*</span>
+                    <span>Email:</span>
+                    <input type="email" name="email" required>
+                </label>
+                <div class="line-break"></div>
+                <div class="subscribe">
+                    <span class="sub_text">Do you want us to send more news and fun facts about bears?</span>
+                    <div class="checkbox">
+                        <label>
+                            <span>yes</span>
+                            <input type="checkbox" name="subscribe" value="yes">
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <span>no</span>
+                            <input type="checkbox" name="subscribe" value="no">
+                        </label>
+                    </div>
+                </div>
+                <div class="line-break"></div>
+                <div class="frequency">
+                    <label class="updates">
+                        <span class="freq_text">How often do you want to receive the updates</span>
+                        <select name="updates" required>
+                            <option value="1">Bi-weekly</option>
+                            <option value="2">Monthly</option>
+                            <option value="3">Yearly</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="line-break"></div>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <ul class="footer__menu">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </footer>
+</body>
+
+</html>
