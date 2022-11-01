@@ -44,7 +44,7 @@ form {
     align-items: center;
 }
 
-.register-name-error{
+.register-name-error {
     display: none;
 }
 
@@ -120,7 +120,7 @@ button {
         margin: auto 20px;
     }
 
-    form {
+    /* form {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -128,6 +128,57 @@ button {
         line-height: 2;
         align-items: center;
         text-align: center;
+    } */
+
+    .register {
+        display: grid;
+        grid-template-areas:
+            "name-email"
+            "confirmemail-spam"
+            "tier"
+            "register";
+    }
+
+    .name-email {
+        grid-area: name-email;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .confirmemail-spam {
+        grid-area: confirmemail-spam;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tier-div {
+        grid-area: tier;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .register-div {
+        grid-area: register;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-div {
+        text-align: right;
+    }
+
+    .confirm-email-div {
+        text-align: right;
+    }
+
+    .register-checkbox-label {
+        padding: 10px;
+    }
+
+    .register-dropdown-label {
+        padding: 10px;
     }
 
     .line-break {
@@ -157,4 +208,3 @@ button {
     }
 
 }
-
