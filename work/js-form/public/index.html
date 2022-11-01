@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Register</h1>
+    </header>
+
+    <main>
+        <form class="register" action="/register" method="POST">
+            <label class="register-label">
+                <div class="name-div">
+                    <span class="req">*</span>
+                    <label class="register-name-label">Name:</label>
+                    <input class="register-name" type="text" name="name">
+                    <label class="req req-name-error register-name-error">* Please fill Name field</label>
+                </div>
+            </label>
+            <label class="register-label">
+                <div class="email-div">
+                    <span class="req">*</span>
+                    <label class="register-email-label">Email:</label>
+                    <input class="register-email" type="text" name="email">
+                    <label class="req register-email-error"></label>
+                </div>
+            </label>
+            <div class="line-break"></div>
+            <label class="register-label">
+                <div class="confirm-email-div">
+                    <span class="req">*</span>
+                    <label class="register-confirm-email-label">Confirm Email:</label>
+                    <input class="register-confirm-email" type="text" name="confirm-email">
+                    <label class="req register-confirm-email-error"></label>
+                </div>
+            </label>
+            <label class="register-label">
+                <div class="spam-div">
+                    <label class="register-checkbox-label">want-spam</label>
+                    <input class="register-checkbox" type="checkbox" name="want-spam" checked>
+                </div>
+            </label>
+            <div class="line-break"></div>
+            <label class="register-label">
+                <div class="tier-div">
+                    <label class="register-dropdown-label">Select Tier</label>
+                    <select class="register-dropdown" name="tier">
+                        <option value="" selected>Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                </div>
+                </select>
+            </label>
+            <div class="line-break"></div>
+            <p class="req email-match-error"></p>
+            <div class="line-break"></div>
+            <div class="register-div">
+                <button class="register-submit" type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <ul class="footer-menu">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

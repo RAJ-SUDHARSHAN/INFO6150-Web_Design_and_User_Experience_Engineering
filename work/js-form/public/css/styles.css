@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #e2f7f1;
+    font-family: sans-serif;
+    align-items: center;
+    margin: 0;
+}
+
+.register-label {
+    display: block;
+    margin: 15px;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 90% auto;
+}
+
+.header {
+    grid-area: header;
+    align-items: center;
+    background-color: rgb(145, 188, 53);
+}
+
+main {
+    grid-area: main;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    align-items: center;
+}
+
+.register-name-error{
+    display: none;
+}
+
+main p {
+    text-align: center;
+}
+
+.checkbox {
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: auto;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(145, 188, 53);
+}
+
+.footer-menu {
+    padding: 1rem;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+    align-items: center;
+}
+
+.footer-menu>li {
+    padding: 10px;
+
+    font-size: 0.7rem;
+}
+
+.req {
+    color: red;
+}
+
+@media screen and (min-width: 40rem) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-rows: auto 90% auto;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        margin: auto 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 2;
+        align-items: center;
+        text-align: center;
+    }
+
+    .line-break {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: auto;
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+
+    .footer-menu {
+        grid-column: 4 / 10;
+    }
+
+}
+
