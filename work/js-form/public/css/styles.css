@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #e2f7f1;
+  font-family: sans-serif;
+  align-items: center;
+  margin: 0;
+}
+
+.name-div,
+.email-div,
+.confirm-email-div,
+.spam-div,
+.tier-div,
+.register-div {
+  display: block;
+  margin: 15px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 90% auto;
+}
+
+.header {
+  grid-area: header;
+  align-items: center;
+  background-color: rgb(145, 188, 53);
+}
+
+main {
+  grid-area: main;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  align-items: center;
+}
+
+.register-name-error {
+  display: none;
+}
+
+main p {
+  text-align: center;
+}
+
+.checkbox {
+  margin: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: auto;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(145, 188, 53);
+}
+
+.footer-menu {
+  padding: 1rem;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+  align-items: center;
+}
+
+.footer-menu > li {
+  padding: 10px;
+
+  font-size: 0.7rem;
+}
+
+.req {
+  color: red;
+}
+
+@media screen and (min-width: 40rem) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 90% auto;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    margin: auto 20px;
+  }
+
+  .register {
+    display: grid;
+    grid-template-areas:
+      "name-email"
+      "confirmemail-spam"
+      "tier"
+      "email-match-error"
+      "register";
+  }
+
+  .name-email {
+    grid-area: name-email;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .confirmemail-spam {
+    grid-area: confirmemail-spam;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tier-div {
+    grid-area: tier;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .email-match-error {
+    grid-area: email-match-error;
+  }
+
+  .register-div {
+    grid-area: register;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name-div {
+    text-align: right;
+  }
+
+  .confirm-email-div {
+    text-align: right;
+  }
+
+  .dropdown-div {
+    text-align: right;
+    padding-right: 5px;
+  }
+
+  .register-checkbox-label {
+    padding: 10px;
+  }
+
+  .register-dropdown-label {
+    padding: 10px;
+  }
+
+  .line-break {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: auto;
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .footer-menu {
+    grid-column: 4 / 10;
+  }
+}
