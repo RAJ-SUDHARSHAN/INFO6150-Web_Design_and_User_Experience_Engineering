@@ -9,8 +9,8 @@ body {
     height: 100%;
     background-color: papayawhip;
     font-family: sans-serif;
-    align-items: center;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,7 +19,6 @@ body {
         "header"
         "main"
         "footer";
-    /* grid-template-rows: 105px 90% 15px; */
 }
 
 .header {
@@ -34,13 +33,21 @@ body {
     display: inline;
 }
 
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
 .header__skip-content:focus {
     left: 50%;
 }
 
-.header__logo {
+.mobile-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo-img {
@@ -50,8 +57,6 @@ body {
 
 .header__h1 {
     flex: 1;
-
-    /* font-size: 3rem; */
     text-align: center;
 }
 
@@ -59,34 +64,55 @@ body {
 Below CSS adapted from https://css.gg under the MIT License
 */
 .gg-menu {
-    transform: scale(var(--ggs,1))
-   }
-   
-   .gg-menu,
-   .gg-menu::after,
-   .gg-menu::before {
+    transform: scale(var(--ggs, 1));
+}
+
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
     box-sizing: border-box;
     position: relative;
     display: block;
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background: currentColor
-   }
-   
-   .gg-menu::after,
-   .gg-menu::before {
+    background: currentColor;
+}
+
+.gg-menu::after,
+.gg-menu::before {
     content: "";
     position: absolute;
-    top: -6px
-   }
-   
-   .gg-menu::after {
-    top: 6px
-   } 
+    top: -6px;
+}
+
+.gg-menu::after {
+    top: 6px;
+}
+
+.show {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 110px;
+}
+
+.main {
+    grid-area: main;
+}
 
 .globalnav {
     padding: 1rem;
+    position: relative;
 }
 
 .globalnav__menu {
@@ -95,24 +121,119 @@ Below CSS adapted from https://css.gg under the MIT License
 
     list-style: none;
 
-    text-align: center;
+    display: none;
 }
 
-.main {
-    grid-area: main;
+.globalnav__item {
+    padding: 5px;
+    position: relative;
 }
+
 
 .footer {
     grid-area: footer;
     background-color: burlywood;
+    align-items: center;
+    margin: auto;
+    width: 100%;
 }
 
+.footer__menu {
+    padding: 1rem;
+    margin: 0;
 
+    list-style: none;
+}
+
+.footer__menu>li {
+    padding: 3px;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.req {
+    color: red;
+    font-style: italic;
+}
+
+.subscription-form {
+    padding: 10px;
+}
+
+.modal-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cats__card-content-subscribe{
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .menu-icon{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+} */
 
 @media screen and (min-width: 44rem) {
-    .header {
-        grid-area: header;
+    .mobile-container {
+        flex-direction: column;
+    }
 
-        background-color: red;
+    .header__logo {
+        width: 100%;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        background-color: burlywood;
+    }
+
+    .footer__menu {
+        grid-column: span 12;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+
+    .gg-menu {
+        display: none;
+    }
+
+    .globalnav {
+        width: 100%;
+        grid-column: span 12;
+        padding: 0;
+    }
+
+    .globalnav__menu {
+        background-color: burlywood;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* .globalnav-menu-desktop {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  } */
+
+    .globalnav__item {
+        padding: 10px;
+        position: relative;
     }
 }
