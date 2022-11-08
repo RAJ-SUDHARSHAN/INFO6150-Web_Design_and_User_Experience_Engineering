@@ -177,32 +177,32 @@
     });
   }
 
-    // Modal open and Close
-    const modal = document.querySelector(".modal");
-    //   const openModal = document.querySelector(".cats__card-content-subscribe")
-    const openModal = document.getElementsByClassName(
-      "cats__card-content-subscribe"
-    );
-  
-    if (modal) {
-      for (let i = 0; i < openModal.length; i++) {
-        console.log("inside loop");
-        openModal[i].addEventListener("click", () => {
-          modal.showModal();
-        });
-      }
-  
-      // Cancel Button
-      const cancelModal = document.querySelector(".cancel-button");
-  
-      cancelModal.addEventListener("click", (event) => {
-        event.preventDefault();
-        modal.close();
-        emailEl.value = "";
-        confirmEmailEl.value = "";
-        emailEl.innerText = "";
-        confirmEmailErr.innerText = "";
-        emailMatchErr.innerText = "";
+  // Modal open and Close
+  const modal = document.querySelector(".modal");
+  //   const openModal = document.querySelector(".cats__card-content-subscribe")
+  const openModal = document.getElementsByClassName(
+    "cats__card-content-subscribe"
+  );
+
+  if (modal) {
+    for (let i = 0; i < openModal.length; i++) {
+      console.log("inside loop");
+      openModal[i].addEventListener("click", () => {
+        modal.showModal();
       });
     }
+
+    // Cancel Button
+    const cancelModal = document.querySelector(".cancel-button");
+
+    cancelModal.addEventListener("click", (event) => {
+      event.preventDefault();
+      modal.close();
+      emailEl.value = "";
+      confirmEmailEl.value = "";
+      emailEl.innerText = "";
+      confirmEmailErr.innerText = "";
+      emailMatchErr.innerText = "";
+    });
+  }
 })();
