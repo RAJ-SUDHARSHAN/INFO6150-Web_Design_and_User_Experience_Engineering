@@ -23,12 +23,11 @@
             </div>
             <nav class="globalnav">
                 <div class="menu">
-                    <!-- <button class="menu-icon"><i class="gg-menu"></i></button> -->
-                    <a href="#" class="menu-icon"><i class="gg-menu" aria-label="menu icon"></i></a>
-                    <ul class="globalnav__menu">
+                    <button class="menu-icon" type="button"><i class="gg-menu" aria-label="menu icon"></i></button>
+                    <ul class="globalnav__menu hide-menu">
                         <li class="globalnav__item"><a href="index.html">Home</a></li>
                         <li class="globalnav__item">
-                            <a href="cats.html">Famous Cats</a>
+                            <a href="famous_cats.html">Famous Cats</a>
                         </li>
                         <li class="globalnav__item">
                             <a href="events.html">Cat Events</a>
@@ -47,8 +46,7 @@
                 <p class="cats__card-content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
                     laudantium!</p>
                 <p>Lorem ipsum dolor
-                    <!-- <a class="cats__card-content-subscribe" href="subscribe.html">Subscribe</a> -->
-                    <button class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
+                    <button type="button" class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
                     amet consectetur.
                 </p>
             </div>
@@ -57,7 +55,7 @@
                 <img class="cats__card-content-pic" src="http://placekitten.com/300/300" alt="Card2 Cat image">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, quaerat.</p>
                 <p>Lorem ipsum dolor
-                    <button class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
+                    <button type="button" class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
                     amet consectetur.</p>
             </div>
             <div class="cats__card-content">
@@ -65,7 +63,7 @@
                 <img class="cats__card-content-pic" src="http://placekitten.com/300/300" alt="Card3 Cat image">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, corrupti!</p>
                 <p>Lorem ipsum dolor
-                    <button class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
+                    <button type="button" class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
                     amet consectetur.</p>
             </div>
             <div class="cats__card-content">
@@ -73,7 +71,7 @@
                 <img class="cats__card-content-pic" src="http://placekitten.com/300/300" alt="Card4 Cat image">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sed?</p>
                 <p>Lorem ipsum dolor
-                    <button class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
+                    <button type="button" class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
                     amet consectetur.</p>
             </div>
             <div class="cats__card-content">
@@ -81,7 +79,7 @@
                 <img class="cats__card-content-pic" src="http://placekitten.com/300/300" alt="Card5 Cat image">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, numquam?</p>
                 <p>Lorem ipsum dolor
-                    <button class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
+                    <button type="button" class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
                     amet consectetur.</p>
             </div>
             <div class="cats__card-content">
@@ -89,7 +87,7 @@
                     src="http://placekitten.com/300/300" alt="Card6 Cat image">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati.</p>
                 <p>Lorem ipsum dolor
-                    <button class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
+                    <button type="button" class="cats__card-content-subscribe" href="subscribe.html">Subscribe</button>
                     amet consectetur.</p>
             </div>
         </div>
@@ -105,8 +103,8 @@
     </footer>
 
     <dialog class="modal" id="modal">
-        <!-- <form action="/subscribe" class="subscription-form" method="dialog"> -->
-        <form action="/subscribe" class="subscription-form">
+        <!-- <form action="/subscribe" class="subscription-form" method="POST" method="dialog"> -->
+        <form action="/subscribe" class="subscription-form" method="POST">
             <div>
                 <label>Email:
                     <input type="text" class="subscribe-email">
@@ -125,7 +123,7 @@
                 <span class="req subscribe-confirm-email-error invalid-email"></span>
             </div>
             <br>
-            <span class="email-match-error"></span>
+            <span class="req email-match-error"></span>
             <div class="modal-button">
                 <button class="subscribe-button" type="submit">Subscribe</button>
                 <button class="cancel-button" type="cancel">Cancel</button>

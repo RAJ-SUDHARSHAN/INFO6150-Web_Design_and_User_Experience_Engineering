@@ -59,15 +59,17 @@
     grid-column: span 12;
   }
 
-  .cats__card-content > img {
+  .cats__card-content>img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
+
   .cats__card-content-heading {
     text-align: center;
   }
+
   .cats__card-content-pic {
     text-align: center;
   }
@@ -75,6 +77,7 @@
   .cats__card-content-text {
     text-align: left;
   }
+
   .cats__cards {
     grid-column: span 12;
     display: grid;

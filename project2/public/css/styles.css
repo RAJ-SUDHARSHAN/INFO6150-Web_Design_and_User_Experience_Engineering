@@ -94,15 +94,15 @@ Below CSS adapted from https://css.gg under the MIT License
     padding: 0;
     margin: 0;
 
-    list-style: none;
-    
+    list-style: none !important;
+
     display: flex;
     flex-direction: column;
     background-color: burlywood;
 
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 50px;
     width: 110px;
 }
 
@@ -119,13 +119,13 @@ Below CSS adapted from https://css.gg under the MIT License
     padding: 0;
     margin: 0;
 
-    list-style: none;
+    list-style: none !important;
 
     display: none;
 }
 
 .globalnav__item {
-    padding: 5px;
+    padding: 0.3rem;
     position: relative;
 }
 
@@ -146,7 +146,7 @@ Below CSS adapted from https://css.gg under the MIT License
 }
 
 .footer__menu>li {
-    padding: 3px;
+    padding: 0.2rem;
 
     font-size: 0.7rem;
     font-weight: bold;
@@ -158,7 +158,7 @@ Below CSS adapted from https://css.gg under the MIT License
 }
 
 .subscription-form {
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 .modal-button {
@@ -166,17 +166,20 @@ Below CSS adapted from https://css.gg under the MIT License
     justify-content: space-between;
 }
 
-.cats__card-content-subscribe{
+.cats__card-content-subscribe {
     border: none;
     text-decoration: underline;
     cursor: pointer;
 }
 
-/* .menu-icon{
+.menu-icon {
     border: none;
     text-decoration: none;
     cursor: pointer;
-} */
+    background-color: burlywood;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
 
 @media screen and (min-width: 44rem) {
     .mobile-container {
@@ -214,6 +217,8 @@ Below CSS adapted from https://css.gg under the MIT License
     .globalnav__menu {
         background-color: burlywood;
 
+        list-style: none;
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -233,7 +238,7 @@ Below CSS adapted from https://css.gg under the MIT License
   } */
 
     .globalnav__item {
-        padding: 10px;
+        padding: 0.5rem;
         position: relative;
     }
 }
