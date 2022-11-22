@@ -1,0 +1,29 @@
+.index__card {
+    border: 1px solid black;
+    background-color: rgba(203, 222, 228, 0.933);
+    margin: 20px;
+    padding: 10px;
+}
+
+.index__card-content-pic1 {
+    float: right;
+    aspect-ratio: 1/1;
+    height: 125px;
+    width: 125px;
+    padding-left: 10px;
+}
+
+.index__card-content-heading {
+    text-align: center;
+}
+
+.index__card-content-pic2 {
+    float: left;
+    height: 125px;
+    width: 125px;
+    padding-right: 10px;
+}
+
+.index__card-content-text {
+    text-align: justify;
+}
