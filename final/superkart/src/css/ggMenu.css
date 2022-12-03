@@ -1,0 +1,62 @@
+/* Adapted from https://css.gg/menu-boxed per the MIT License https://css.gg/doc/license*/
+
+.gg-menu {
+    transform: scale(var(--ggs,1.3));
+    margin: auto;
+   }
+   
+   .gg-menu,
+   .gg-menu::after,
+   .gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+   }
+   
+   .gg-menu::after,
+   .gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+   }
+   
+   .gg-menu::after {
+    top: 6px
+   } 
+
+/* Adapted from https://css.gg/close-r per the MIT License https://css.gg/doc/license*/
+
+.gg-close {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.3));
+    margin: auto;
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px
+   }
+   
+   .gg-close::after,
+   .gg-close::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+   }
+   
+   .gg-close::after {
+    transform: rotate(-45deg)
+   } 

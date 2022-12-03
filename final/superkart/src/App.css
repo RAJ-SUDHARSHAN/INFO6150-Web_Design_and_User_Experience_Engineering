@@ -1,0 +1,20 @@
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+      "header"
+      "main"
+      "footer"
+  ;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header__skip-content {
+  position: absolute;
+  left: -100%;
+  display: inline;
+}
+
+.header__skip-content:focus {
+  left: 45%;
+}
