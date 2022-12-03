@@ -1,79 +1,39 @@
-/* .carousel {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    background-color: transparent;
-    }
-    
-  .carousel__slide-container {
-    position: relative;
-    display: grid;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-  }
-  
-  .carousel__slide {
-    height: 750px;
-    position: absolute;
-    visibility: hidden;
-  }
-  
-  .carousel__slide--active {
-    position: static;
-    visibility: visible;
-  }
-  
-  .carousel__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 100%;
-    padding-top: 5rem;
-    padding-bottom: -5rem;
-  }
-  
-  .carousel__control {
-    min-width: 300px;
-    min-height: 80px;
-    height: 50%;
-    border: hidden;
-    background-color: transparent;
-    padding-top: 10rem;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .carousel {
-      display: flex;
-      flex-direction: row;
-      margin-top: 2rem;
-    }
-  
-    .carousel__img {
-      width: 50%;
-      height: auto;
-      padding: 0 5rem;
-    }
-  
-    .carousel__control {
-      min-width: 10px;
-      min-height: 10px;
-      margin-top: 30px;
-    }
-  }
-   */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
 
-   .phones__card-content-pic {
-    padding-bottom: 20px;
+.phones__card-content-pic {
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  width: max(30%, 150px);
+  /* border-radius: 1rem; */
+}
+
+.carousel__button {
+  font-size: larger;
+  border: none;
+  text-decoration: none;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 44rem) {
+  .phones__card-content-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
-    width: max(30%, 150px);
-    /* border-radius: 1rem; */
+    width: 70%;
+    height: 480px;
   }
+
+  .carousel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: transparent;
+  }
+}

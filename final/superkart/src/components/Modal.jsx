@@ -31,6 +31,15 @@ function Modal({ showModal, setShowModal }) {
 
     const handleClose = (e) => {
         e.preventDefault();
+        setEmail("");
+        setEmailError("");
+        setConfirmEmail("");
+        setConfirmEmailError("");
+        setPromocode("");
+        setPromoCodeError("");
+        setAddress("");
+        setAddressError("");
+        setChecked(false);
         setShowModal(false);
         setThankyouModal(false);
     };
@@ -167,9 +176,10 @@ function Modal({ showModal, setShowModal }) {
                             />
                         </label>
                     </div>
-                    <br />
+                    
                     {checked && (
                         <div>
+                            <br />
                             <label>
                                 Enter Promo Code:
                                 <input
