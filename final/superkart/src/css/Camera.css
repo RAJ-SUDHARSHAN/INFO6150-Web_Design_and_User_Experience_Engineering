@@ -1,11 +1,15 @@
-.cats__card-content-subscribe {
+.camera__card-content-preorder {
   border: none;
   text-decoration: none;
   cursor: pointer;
   background-color: lightblue;
 }
 
-.cats__card-content {
+.camera__card-content-heading {
+  text-align: center;
+}
+
+.camera__card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,58 +22,44 @@
   background-color: lightblue;
 }
 
-.cats__card-content-text {
+.camera__card-content-text {
   display: flex;
   justify-content: center;
+  font-weight: 700;
   line-height: 1.5;
   font-size: 0.9rem;
   margin-top: 0;
 }
 
-.card__link {
-  padding: 1rem;
-  border-radius: 1rem;
-
-  background-color: rgb(145, 188, 53);
-  color: white;
-
-  text-decoration: none;
-}
-
-.cats__card-content:hover {
+.camera__card-content:hover {
   box-shadow: 1px 1px 5px 5px rgb(5, 58, 76);
 }
 
-.cats__card-content-pic {
-  aspect-ratio: 1/1;
+.camera__card-content-pic {
   padding-bottom: 20px;
-  width: max(30%, 100px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  height: 30rem;
+  padding: 0;
+  padding-bottom: 10px;
+  /* width: 280px;
+height: 480px; */
 }
 
-.card__link:hover {
-  box-shadow: 1px 1px 5px 5px lightgrey;
-
-  background-color: green;
+.preorder__text {
+  width: 30%;
+  padding: 5px;
+  background-color: orange;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 44rem) {
-  .cats__card-content>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .cats__cards {
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .preorder__text {
-    width: 30%;
-    padding: 5px;
-    background-color: orange;
-    font-weight: bolder;
+  .camera__card-content>img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
 }

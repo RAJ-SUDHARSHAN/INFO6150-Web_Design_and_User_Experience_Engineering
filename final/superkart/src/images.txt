@@ -37,3 +37,53 @@ Cannon 600d:
     https://unsplash.com/photos/vRk2BqHGO9Q
     https://unsplash.com/photos/NDp0pUWas3Q
     https://unsplash.com/photos/1kQmoOMtwEM
+
+Cannon EOS6D:
+    https://unsplash.com/photos/iCO1OGHlb10
+    https://unsplash.com/photos/vKVGwzNwWeQ
+    https://unsplash.com/photos/kCCe6Gsd5QM
+
+GOPRO HERO 8:
+    https://unsplash.com/photos/0lZeJ4jl2sI
+    https://unsplash.com/photos/Vwwl7jNMAjs
+    https://unsplash.com/photos/KeAgSLn1czU
+
+PENTAX MZ50:
+    https://unsplash.com/photos/p4PSTypzDa0
+    https://unsplash.com/photos/cVePMtdRiLA
+    https://unsplash.com/photos/zUnc4-eHw6E
+
+SONY_Alpha_7II:
+    https://unsplash.com/photos/6qesnUQceJA
+    https://unsplash.com/photos/IVaKksEZmZA
+    https://unsplash.com/photos/sgXF7Vl3Yek
+
+Macbook Pro:
+    https://unsplash.com/photos/mP7aPSUm7aE
+    https://unsplash.com/photos/fhmRqhD_dYg
+    https://unsplash.com/photos/ykI7BeSWgMo
+
+Macbook Air:
+    https://unsplash.com/photos/S2r2Ex8jv2o
+    https://unsplash.com/photos/o9XN28KdyN8
+    https://unsplash.com/photos/RSCirJ70NDM
+
+Acer Chomebook:
+    https://unsplash.com/photos/rndjGfyInvs
+    https://unsplash.com/photos/zwsHjakE_iI
+    https://unsplash.com/photos/A9Msi-vUNKg
+
+HP Spectre:
+    https://unsplash.com/photos/tWjzmNXKup4
+    https://unsplash.com/photos/7KLpKCG05vI
+    https://unsplash.com/photos/SPaPUtVmp2w
+
+DELL Vostro:
+    https://unsplash.com/photos/i5UV2HpITYA
+    https://unsplash.com/photos/2nCeVeFWA_c
+    https://unsplash.com/photos/0uVSMGdeUKM
+
+ASUS ZenBook:
+    https://unsplash.com/photos/4bjnDpfiSo4
+    https://unsplash.com/photos/7uscPYY6fvQ
+    https://unsplash.com/photos/XFKDzu0qVJ8

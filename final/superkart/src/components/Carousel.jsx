@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../css/Carousel.css";
 
-function Carousel({ images }) {
+function Carousel({ className, altField, images }) {
     const [imageIndex, setImageIndex] = useState(1);
 
     const maxIndex = 3;
@@ -24,9 +24,9 @@ function Carousel({ images }) {
             </button>
             {images && (
                 <img
-                    className="phone__card-content-pic"
+                    className={className}
                     src={images[`image${imageIndex}`]}
-                    alt="iphone 14 pro"
+                    alt={altField}
                 />
             )}
             <button className="carousel__button" onClick={goToNext}>

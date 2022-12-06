@@ -1,151 +1,33 @@
 import "../css/Camera.css";
+import Carousel from "./Carousel";
 
-function Camera({ onNav }) {
+function Camera({
+    title,
+    images,
+    retail_price,
+    megapixels,
+    aperture_range,
+    camera_format,
+    preorderOnClick,
+}) {
     return (
-        <div className="cats__cards">
-            <div className="cats__card-content">
-                <h3 className="cats__card-content-heading">Jorts</h3>
-                <img
-                    className="cats__card-content-pic"
-                    src="http://placekitten.com/300/300?image=2"
-                    alt="Card1 Cat"
-                />
-                <p className="cats__card-content-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
-                    laudantium!
-                </p>
-                <p>
-                    {" "}
-                    <button
-                        type="button"
-                        className="cats__card-content-subscribe"
-                        onClick={onNav}
-                        data-target="Home"
-                    >
-                        Click here
-                    </button>
-                    to go to Homepage
-                </p>
-            </div>
-            <div className="cats__card-content">
-                <h3 className="cats__card-content-heading">Jean</h3>
-                <img
-                    className="cats__card-content-pic"
-                    src="http://placekitten.com/300/300?image=3"
-                    alt="Card2 Cat"
-                />
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
-                    quaerat.
-                </p>
-                <p>
-                    {" "}
-                    <button
-                        type="button"
-                        className="cats__card-content-subscribe"
-                        onClick={onNav}
-                        data-target="Home"
-                    >
-                        Click here
-                    </button>
-                    to go to Homepage
-                </p>
-            </div>
-            <div className="cats__card-content">
-                <h3 className="cats__card-content-heading">Maru</h3>
-                <img
-                    className="cats__card-content-pic"
-                    src="http://placekitten.com/300/300?image=4"
-                    alt="Card3 Cat"
-                />
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
-                    corrupti!
-                </p>
-                <p>
-                    {" "}
-                    <button
-                        type="button"
-                        className="cats__card-content-subscribe"
-                        onClick={onNav}
-                        data-target="Home"
-                    >
-                        Click here
-                    </button>
-                    to go to Homepage
-                </p>
-            </div>
-            <div className="cats__card-content">
-                <h3 className="cats__card-content-heading">Nyancat</h3>
-                <img
-                    className="cats__card-content-pic"
-                    src="http://placekitten.com/300/300?image=5"
-                    alt="Card4 Cat"
-                />
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sed?
-                </p>
-                <p>
-                    {" "}
-                    <button
-                        type="button"
-                        className="cats__card-content-subscribe"
-                        onClick={onNav}
-                        data-target="Home"
-                    >
-                        Click here
-                    </button>
-                    to go to Homepage
-                </p>
-            </div>
-            <div className="cats__card-content">
-                <h3 className="cats__card-content-heading">Grumpy Cat</h3>
-                <img
-                    className="cats__card-content-pic"
-                    src="http://placekitten.com/300/300?image=6"
-                    alt="Card5 Cat"
-                />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-                    numquam?
-                </p>
-                <p>
-                    {" "}
-                    <button
-                        type="button"
-                        className="cats__card-content-subscribe"
-                        onClick={onNav}
-                        data-target="Home"
-                    >
-                        Click here
-                    </button>
-                    to go to Homepage
-                </p>
-            </div>
-            <div className="cats__card-content">
-                <h3 className="cats__card-content-heading">Lil Bub</h3>
-                <img
-                    className="cats__card-content-pic"
-                    src="http://placekitten.com/300/300?image=7"
-                    alt="Card6 Cat"
-                />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                    obcaecati.
-                </p>
-                <p>
-                    {" "}
-                    <button
-                        type="button"
-                        className="cats__card-content-subscribe"
-                        onClick={onNav}
-                        data-target="Home"
-                    >
-                        Click here
-                    </button>
-                    to go to Homepage
-                </p>
-            </div>
+        <div className="camera__card-content">
+            <h3 className="camera__card-content-heading">{title}</h3>
+            <Carousel className={"camera__card-content-pic"} altField={"Camera Gallery"} images={images} />
+            <p className="camera__card-content-text">
+                Retail Price: {retail_price} <br />
+                MegaPixel: {megapixels} <br />
+                Aperture Range: {aperture_range} <br />
+                Camera Fromat: {camera_format} <br />
+            </p>
+            <button
+                type="button"
+                className="camera__card-content-preorder"
+                onClick={preorderOnClick}
+            >
+                {" "}
+                <span className="preorder__text"> Pre Order </span>
+            </button>
         </div>
     );
 }

@@ -25,6 +25,7 @@
 .phone__card-content-text {
     display: flex;
     justify-content: center;
+    font-weight: 700;
     line-height: 1.5;
     font-size: 0.9rem;
     margin-top: 0;
@@ -42,6 +43,7 @@
     width: 20rem;
     height: 30rem;
     padding: 0;
+    padding-bottom: 10px;
     /* width: 280px;
   height: 480px; */
 }
@@ -51,7 +53,7 @@
     padding: 5px;
     background-color: orange;
     font-weight: bolder;
-    font-size: large;
+    font-size: 1.3rem;
 }
 
 @media screen and (min-width: 44rem) {

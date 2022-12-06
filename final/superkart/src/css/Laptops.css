@@ -1,0 +1,33 @@
+.card__link {
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background-color: rgb(145, 188, 53);
+  color: white;
+
+  text-decoration: none;
+}
+
+.card__link:hover {
+  box-shadow: 1px 1px 5px 5px lightgrey;
+
+  background-color: green;
+}
+
+@media screen and (min-width: 44rem) {
+  .laptop__cards {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 80%;
+  }
+}
+
+@media screen and (min-width: 44rem) and (max-width: 75rem) {
+  .laptop__cards {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 80%;
+  }
+}

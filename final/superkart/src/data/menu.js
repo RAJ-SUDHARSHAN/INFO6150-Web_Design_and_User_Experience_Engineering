@@ -4,12 +4,12 @@ const menu = [
     path: "/",
   },
   {
-    name: "Laptop",
-    path: "/laptop.html",
+    name: "Laptops",
+    path: "/laptops.html",
   },
   {
-    name: "Camera",
-    path: "/camera.html",
+    name: "Cameras",
+    path: "/cameras.html",
   },
 ];
 

@@ -1,13 +1,18 @@
-.cats__card-content-subscribe {
+.laptop__card-content-preorder {
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   background-color: lightblue;
 }
 
-.cats__card-content {
+.laptop__card-content-heading {
+  text-align: center;
+}
+
+.laptop__card-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   border: 2px solid black;
   border-radius: 2rem;
@@ -17,74 +22,44 @@
   background-color: lightblue;
 }
 
-.cats__card-content p {
+.laptop__card-content-text {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
   line-height: 1.5;
   font-size: 0.9rem;
   margin-top: 0;
 }
 
-.card__link {
-  padding: 1rem;
-  border-radius: 1rem;
-
-  background-color: rgb(145, 188, 53);
-  color: white;
-
-  text-decoration: none;
-}
-
-.cats__card-content:hover {
+.laptop__card-content:hover {
   box-shadow: 1px 1px 5px 5px rgb(5, 58, 76);
 }
 
-.cats__card-content-pic {
-  aspect-ratio: 1/1;
+.laptop__card-content-pic {
   padding-bottom: 20px;
-  width: max(30%, 100px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+    height: 25rem;
+  padding: 0;
+  padding-bottom: 10px;
+  /* width: 280px;
+  height: 480px; */
 }
 
-.card__link:hover {
-  box-shadow: 1px 1px 5px 5px lightgrey;
-
-  background-color: green;
+.preorder__text {
+  width: 30%;
+  padding: 5px;
+  background-color: orange;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 44rem) {
-  /* .main {
-      grid-area: main;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-  
-      margin: auto 20px;
-    } */
-
-  /* .main h2 {
-      grid-column: span 12;
-    } */
-
-  .cats__card-content>img {
+  .laptop__card-content>img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-  }
-
-  .cats__card-content-heading {
-    text-align: center;
-  }
-
-  .cats__card-content-pic {
-    text-align: center;
-  }
-
-  .cats__card-content-text {
-    text-align: left;
-  }
-
-  .cats__cards {
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
   }
 }
