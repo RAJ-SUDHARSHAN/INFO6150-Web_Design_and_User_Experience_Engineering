@@ -24,51 +24,51 @@ import Samsung_S22_Ultra_2 from "../images/Samsung_S22_Ultra_2.jpg";
 import Samsung_S22_Ultra_3 from "../images/Samsung_S22_Ultra_3.jpg";
 
 const cannon600dImages = {
-    image1: Cannon_600d_1,
-    image2: Cannon_600d_2,
-    image3: Cannon_600d_3,
+  image1: Cannon_600d_1,
+  image2: Cannon_600d_2,
+  image3: Cannon_600d_3,
 };
 
 export const iphone14ProImages = {
-    image1: Iphone_14_pro_1,
-    image2: Iphone_14_pro_2,
-    image3: Iphone_14_pro_3,
+  image1: Iphone_14_pro_1,
+  image2: Iphone_14_pro_2,
+  image3: Iphone_14_pro_3,
 };
 
 export const googlePixel7Images = {
-    image1: Google_Pixel_7_1,
-    image2: Google_Pixel_7_2,
-    image3: Google_Pixel_7_3,
+  image1: Google_Pixel_7_1,
+  image2: Google_Pixel_7_2,
+  image3: Google_Pixel_7_3,
 };
 
 export const googlePixel6ProImages = {
-    image1: Google_Pixel_6_Pro_1,
-    image2: Google_Pixel_6_Pro_2,
-    image3: Google_Pixel_6_Pro_3,
+  image1: Google_Pixel_6_Pro_1,
+  image2: Google_Pixel_6_Pro_2,
+  image3: Google_Pixel_6_Pro_3,
 };
 
 export const iphone13Images = {
-    image1: Iphone_13_1,
-    image2: Iphone_13_2,
-    image3: Iphone_13_3,
+  image1: Iphone_13_1,
+  image2: Iphone_13_2,
+  image3: Iphone_13_3,
 };
 
 export const NikonZ6Images = {
-    image1: Nikon_Z6_1,
-    image2: Nikon_Z6_2,
-    image3: Nikon_Z6_3,
+  image1: Nikon_Z6_1,
+  image2: Nikon_Z6_2,
+  image3: Nikon_Z6_3,
 };
 
 export const oneplus10TImages = {
-    image1: Oneplus_10T_1,
-    image2: Oneplus_10T_2,
-    image3: Oneplus_10T_3,
+  image1: Oneplus_10T_1,
+  image2: Oneplus_10T_2,
+  image3: Oneplus_10T_3,
 };
 
 export const samsungS22UltraImages = {
-    image1: Samsung_S22_Ultra_1,
-    image2: Samsung_S22_Ultra_2,
-    image3: Samsung_S22_Ultra_3,
+  image1: Samsung_S22_Ultra_1,
+  image2: Samsung_S22_Ultra_2,
+  image3: Samsung_S22_Ultra_3,
 };
 
 export default cannon600dImages;

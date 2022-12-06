@@ -15,7 +15,7 @@
   list-style: none;
 }
 
-.footer__list > p {
+.footer__list>p {
   color: grey;
 }
 
@@ -29,4 +29,3 @@
   background-color: dodgerblue;
   color: black;
 }
-

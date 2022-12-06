@@ -1,9 +1,8 @@
 import { footerAbout, footerHelp, footerPolicy } from "../data/menu";
-import '../css/Footer.css'
+import "../css/Footer.css";
 
 function Footer({ setPage }) {
-
-    const about = footerAbout.map(item => {
+    const about = footerAbout.map((item) => {
         return (
             <li className="footer__item" key={item.name}>
                 <a className="footer__link" href={item.path}>
@@ -13,20 +12,24 @@ function Footer({ setPage }) {
         );
     });
 
-    const help = footerHelp.map(item => {
+    const help = footerHelp.map((item) => {
         return (
             <li className="footer__item" key={item.name}>
-                <a onClick={(e) => {
-                    e.preventDefault()
-                    setPage(item.setPage)
-                }} className="footer__link" href={item.path}>
+                <a
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setPage(item.setPage);
+                    }}
+                    className="footer__link"
+                    href={item.path}
+                >
                     {item.name}
                 </a>
             </li>
         );
     });
 
-    const policy = footerPolicy.map(item => {
+    const policy = footerPolicy.map((item) => {
         return (
             <li className="footer__item" key={item.name}>
                 <a className="footer__link" href={item.path}>
@@ -52,7 +55,6 @@ function Footer({ setPage }) {
             </ul>
         </footer>
     );
-
 }
 
 export default Footer;

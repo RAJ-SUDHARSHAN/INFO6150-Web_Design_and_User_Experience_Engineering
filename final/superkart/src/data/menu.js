@@ -32,17 +32,17 @@ export const footerHelp = [
   {
     name: "FAQ",
     path: "/faq.html",
-    setPage: "FAQ"
+    setPage: "FAQ",
   },
   {
     name: "Cancellation & Returns",
     path: "/cancelRetuns.html",
-    setPage: "Cancel"
+    setPage: "Cancel",
   },
   {
     name: "Shipping",
     path: "/shipping.html",
-    setPage: "Shipping"
+    setPage: "Shipping",
   },
 ];
 

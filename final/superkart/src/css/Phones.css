@@ -1,37 +1,3 @@
-.phones__card-content-preorder {
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: lightblue;
-}
-
-.phones__card-content-heading {
-  text-align: center;
-}
-
-.phones__card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-
-  border: 2px solid black;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin: 1rem;
-
-  background-color: lightblue;
-}
-
-.phones__card-content-text {
-  display: flex;
-  justify-content: center;
-  line-height: 1.5;
-  font-size: 0.9rem;
-  margin-top: 0;
-}
-
 .card__link {
   padding: 1rem;
   border-radius: 1rem;
@@ -42,44 +8,14 @@
   text-decoration: none;
 }
 
-.phones__card-content:hover {
-  box-shadow: 1px 1px 5px 5px rgb(5, 58, 76);
-}
-
-.phones__card-content-pic {
-  padding-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: 50%; */
-  width: max(30%, 150px);
-  /* border-radius: 1rem; */
-}
-
 .card__link:hover {
   box-shadow: 1px 1px 5px 5px lightgrey;
 
   background-color: green;
 }
 
-.preorder__text {
-  width: 30%;
-  padding: 5px;
-  background-color: orange;
-  font-weight: bolder;
-  font-size: large;
-}
-
 @media screen and (min-width: 44rem) {
-  .phones__card-content > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 480px;
-  }
-
-  .phones__cards {
+  .phone__cards {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -88,7 +24,7 @@
 }
 
 @media screen and (min-width: 44rem) and (max-width: 75rem) {
-  .phones__cards {
+  .phone__cards {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

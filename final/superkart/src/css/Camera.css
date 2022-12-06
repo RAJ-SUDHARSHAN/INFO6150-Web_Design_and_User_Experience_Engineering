@@ -1,79 +1,75 @@
 .cats__card-content-subscribe {
-    border: none;
-    text-decoration:none;
-    cursor: pointer;
-    background-color: lightblue;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: lightblue;
+}
 
-  }
-  
-  .cats__card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    border: 2px solid black;
-    border-radius: 2rem;
-    padding: 1rem;
-    margin: 1rem;
-  
-    background-color: lightblue;
-  }
-  
-  .cats__card-content-text {
-    display: flex;
-    justify-content: center;
-    line-height: 1.5;
-    font-size: 0.9rem;
-    margin-top: 0;
-  }
-  
-  .card__link {
-    padding: 1rem;
-    border-radius: 1rem;
-  
-    background-color: rgb(145, 188, 53);
-    color: white;
-  
-    text-decoration: none;
-  }
-  
-  .cats__card-content:hover {
-    box-shadow: 1px 1px 5px 5px rgb(5, 58, 76);
-  }
-  
-  .cats__card-content-pic {
-    aspect-ratio: 1/1;
-    padding-bottom: 20px;
-    width: max(30%, 100px);
-  }
-  
-  .card__link:hover {
-    box-shadow: 1px 1px 5px 5px lightgrey;
-  
-    background-color: green;
-  }
-  
-  @media screen and (min-width: 44rem) {
-  
-    .cats__card-content > img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
+.cats__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    .cats__cards {
-      grid-column: span 12;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      
-    }
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 
-    .preorder__text {
-      width: 30%;
-      padding: 5px;
-      background-color: orange;
-      font-weight: bolder;
-    }
+  background-color: lightblue;
+}
+
+.cats__card-content-text {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.card__link {
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background-color: rgb(145, 188, 53);
+  color: white;
+
+  text-decoration: none;
+}
+
+.cats__card-content:hover {
+  box-shadow: 1px 1px 5px 5px rgb(5, 58, 76);
+}
+
+.cats__card-content-pic {
+  aspect-ratio: 1/1;
+  padding-bottom: 20px;
+  width: max(30%, 100px);
+}
+
+.card__link:hover {
+  box-shadow: 1px 1px 5px 5px lightgrey;
+
+  background-color: green;
+}
+
+@media screen and (min-width: 44rem) {
+  .cats__card-content>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
-  
+
+  .cats__cards {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .preorder__text {
+    width: 30%;
+    padding: 5px;
+    background-color: orange;
+    font-weight: bolder;
+  }
+}

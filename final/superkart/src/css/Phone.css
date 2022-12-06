@@ -1,0 +1,63 @@
+.phone__card-content-preorder {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.phone__card-content-heading {
+    text-align: center;
+}
+
+.phone__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: lightblue;
+}
+
+.phone__card-content-text {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.phone__card-content:hover {
+    box-shadow: 1px 1px 5px 5px rgb(5, 58, 76);
+}
+
+.phone__card-content-pic {
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 30rem;
+    padding: 0;
+    /* width: 280px;
+  height: 480px; */
+}
+
+.preorder__text {
+    width: 30%;
+    padding: 5px;
+    background-color: orange;
+    font-weight: bolder;
+    font-size: large;
+}
+
+@media screen and (min-width: 44rem) {
+    .phone__card-content>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

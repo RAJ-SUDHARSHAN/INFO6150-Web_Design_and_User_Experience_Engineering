@@ -20,7 +20,7 @@ function Phones() {
   };
 
   return (
-    <div className="phones__cards">
+    <div className="phone__cards">
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <Phone
         title="Iphone 14 Pro"

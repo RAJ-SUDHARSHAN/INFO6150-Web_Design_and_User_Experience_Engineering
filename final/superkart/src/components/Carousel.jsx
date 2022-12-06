@@ -24,7 +24,7 @@ function Carousel({ images }) {
             </button>
             {images && (
                 <img
-                    className="phones__card-content-pic"
+                    className="phone__card-content-pic"
                     src={images[`image${imageIndex}`]}
                     alt="iphone 14 pro"
                 />

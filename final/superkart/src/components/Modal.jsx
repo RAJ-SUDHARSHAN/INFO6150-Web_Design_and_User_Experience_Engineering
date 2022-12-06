@@ -82,7 +82,7 @@ function Modal({ showModal, setShowModal }) {
             setConfirmEmailError("");
             isConfirmEmailValid = true;
         }
-        
+
         if (checked && promocode === "") {
             setPromoCodeError("Please enter Promo code");
             isPromocodeValid = false;
@@ -176,7 +176,6 @@ function Modal({ showModal, setShowModal }) {
                             />
                         </label>
                     </div>
-                    
                     {checked && (
                         <div>
                             <br />
@@ -217,12 +216,10 @@ function Modal({ showModal, setShowModal }) {
                         </label>
                     </div>
                     {addressError ? (
-                            <span className="req preorder-address-error">
-                                {addressError}
-                            </span>
-                        ) : (
-                            <></>
-                        )}
+                        <span className="req preorder-address-error">{addressError}</span>
+                    ) : (
+                        <></>
+                    )}
                     <br /> <br />
                     <div className="modal-button">
                         <button className="preorder-button" type="submit">
