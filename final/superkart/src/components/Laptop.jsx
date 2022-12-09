@@ -4,6 +4,7 @@ import Carousel from "./Carousel";
 function Laptop({
     title,
     images,
+    price,
     screen_size,
     camera,
     processor,
@@ -16,8 +17,9 @@ function Laptop({
             <h3 className="laptop__card-content-heading">{title}</h3>
             <Carousel className={"laptop__card-content-pic"} altField={"Laptop Gallery"} images={images} />
             <p className="laptop__card-content-text">
+                Retail Price: {price} <br />
                 Screen Size: {screen_size} <br />
-                Camera: {camera} <br />
+                Webcam: {camera} <br />
                 Processor: {processor} <br />
                 Ram: {ram} <br />
                 Battery: {battery} <br />

@@ -5,6 +5,7 @@ import Carousel from "./Carousel";
 function Phone({
     title,
     images,
+    price,
     screen_size,
     camera,
     processor,
@@ -17,6 +18,7 @@ function Phone({
             <h3 className="phone__card-content-heading">{title}</h3>
             <Carousel className={"phone__card-content-pic"} altField={"Phone Gallery"} images={images} />
             <p className="phone__card-content-text">
+                Retail Price: {price} <br />
                 Screen Size: {screen_size} <br />
                 Camera: {camera} <br />
                 Processor: {processor} <br />
