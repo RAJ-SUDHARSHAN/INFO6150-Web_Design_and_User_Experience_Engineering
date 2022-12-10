@@ -7,9 +7,9 @@ import FAQ from "./FAQ";
 function Main({ page, onNav, mainId }) {
     return (
         <main id={mainId}>
-            {page === "Phones" && <Phones onNav={onNav} />}
-            {page === "Laptops" && <Laptops onNav={onNav} />}
-            {page === "Cameras" && <Cameras onNav={onNav} />}
+            {page === "P H O N E" && <Phones onNav={onNav} />}
+            {page === "L A P T O P" && <Laptops onNav={onNav} />}
+            {page === "C A M E R A" && <Cameras onNav={onNav} />}
             {page === "FAQ" && <FAQ />}
         </main>
     );

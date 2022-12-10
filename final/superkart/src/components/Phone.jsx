@@ -1,4 +1,4 @@
-import "../css/Phone.css";
+import "../css/Cards.css";
 
 import Carousel from "./Carousel";
 
@@ -14,11 +14,10 @@ function Phone({
     preorderOnClick,
 }) {
     return (
-        <div className="phone__card-content">
-            <h3 className="phone__card-content-heading">{title}</h3>
-            {/* <Carousel className={"phone__card-content-pic"} altField={"Phone Gallery"} images={images} /> */}
-            <Carousel className={"phone__card-content-pic"} images={images} />
-            <p className="phone__card-content-text">
+        <div className="card-content">
+            <h3 className="card-content-heading">{title}</h3>
+            <Carousel className={"card-content-pic"} images={images} />
+            <p className="card-content-text">
                 Retail Price: {price} <br />
                 Screen Size: {screen_size} <br />
                 Camera: {camera} <br />
@@ -28,7 +27,7 @@ function Phone({
             </p>
             <button
                 type="button"
-                className="phone__card-content-preorder"
+                className="card-content-preorder"
                 onClick={preorderOnClick}
             >
                 {" "}

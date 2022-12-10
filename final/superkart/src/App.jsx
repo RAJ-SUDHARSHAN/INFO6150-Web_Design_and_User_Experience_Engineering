@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [page, setPage] = useState("Phones");
+  const [page, setPage] = useState("P H O N E");
   const mainId = "main";
 
   function onNav(event) {

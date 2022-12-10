@@ -19,9 +19,7 @@ function Carousel({ className, images }) {
 
     return (
         <div className="carousel">
-            <button className="carousel__button" onClick={goToPrev}>
-                &lt;
-            </button>
+            <button className="gg-arrow-left-r carousel__button" onClick={goToPrev}></button>
             {images && (
                 <img
                     className={className}
@@ -29,9 +27,7 @@ function Carousel({ className, images }) {
                     alt={images.alt}
                 />
             )}
-            <button className="carousel__button" onClick={goToNext}>
-                &gt;
-            </button>
+            <button className="gg-arrow-right-r carousel__button" onClick={goToNext}></button>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import "../css/Laptop.css";
+import "../css/Cards.css";
 import Carousel from "./Carousel";
 
 function Laptop({
@@ -13,10 +13,10 @@ function Laptop({
     preorderOnClick,
 }) {
     return (
-        <div className="laptop__card-content">
-            <h3 className="laptop__card-content-heading">{title}</h3>
-            <Carousel className={"laptop__card-content-pic"} altField={"Laptop Gallery"} images={images} />
-            <p className="laptop__card-content-text">
+        <div className="card-content">
+            <h3 className="card-content-heading">{title}</h3>
+            <Carousel className={"card-content-pic"} altField={"Laptop Gallery"} images={images} />
+            <p className="card-content-text">
                 Retail Price: {price} <br />
                 Screen Size: {screen_size} <br />
                 Webcam: {camera} <br />
@@ -26,7 +26,7 @@ function Laptop({
             </p>
             <button
                 type="button"
-                className="laptop__card-content-preorder"
+                className="card-content-preorder"
                 onClick={preorderOnClick}
             >
                 {" "}

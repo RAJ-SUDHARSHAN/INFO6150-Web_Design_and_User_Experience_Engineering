@@ -1,4 +1,4 @@
-import "../css/Camera.css";
+import "../css/Cards.css";
 import Carousel from "./Carousel";
 
 function Camera({
@@ -11,10 +11,10 @@ function Camera({
     preorderOnClick,
 }) {
     return (
-        <div className="camera__card-content">
-            <h3 className="camera__card-content-heading">{title}</h3>
-            <Carousel className={"camera__card-content-pic"} altField={"Camera Gallery"} images={images} />
-            <p className="camera__card-content-text">
+        <div className="card-content">
+            <h3 className="card-content-heading">{title}</h3>
+            <Carousel className={"card-content-pic"} altField={"Camera Gallery"} images={images} />
+            <p className="card-content-text">
                 Retail Price: {retail_price} <br />
                 MegaPixel: {megapixels} <br />
                 Aperture Range: {aperture_range} <br />
@@ -22,7 +22,7 @@ function Camera({
             </p>
             <button
                 type="button"
-                className="camera__card-content-preorder"
+                className="card-content-preorder"
                 onClick={preorderOnClick}
             >
                 {" "}

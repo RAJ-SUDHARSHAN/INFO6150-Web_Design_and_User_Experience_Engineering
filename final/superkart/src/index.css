@@ -10,8 +10,10 @@ body {
   margin: 0;
 
   background-color: #C0FFEE;
-
-  font-family: sans-serif;
+  background: rgb(170, 236, 232);
+  background: linear-gradient(90deg, rgb(248, 245, 178) 0%, rgb(238, 233, 229) 50%, rgba(248, 245, 178) 100%);
+  font-family: 'Yeseva One';
+  /* font-family: sans-serif; */
 }
 
 #root {

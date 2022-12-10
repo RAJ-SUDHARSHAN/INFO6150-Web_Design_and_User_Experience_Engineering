@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+.global-nav__item {
+  padding-bottom: 10px;
+}
+
 .global-nav__list--closed {
   display: none;
 }
@@ -15,18 +19,26 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
+  color: rgb(143, 32, 32);
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 2px solid black;
+
 }
 
 .global-nav__link:hover {
-  background-color: dodgerblue;
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgb(139, 62, 0);
 }
 
 .global-nav__toggle {
   height: 54px;
   width: 54px;
   margin: auto;
-  background-color: skyblue;
+  background-color: rgb(245, 151, 74);
+
   border: none;
 }
 
