@@ -16,7 +16,8 @@ function Phone({
     return (
         <div className="phone__card-content">
             <h3 className="phone__card-content-heading">{title}</h3>
-            <Carousel className={"phone__card-content-pic"} altField={"Phone Gallery"} images={images} />
+            {/* <Carousel className={"phone__card-content-pic"} altField={"Phone Gallery"} images={images} /> */}
+            <Carousel className={"phone__card-content-pic"} images={images} />
             <p className="phone__card-content-text">
                 Retail Price: {price} <br />
                 Screen Size: {screen_size} <br />

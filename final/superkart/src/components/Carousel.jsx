@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../css/Carousel.css";
 
-function Carousel({ className, altField, images }) {
+function Carousel({ className, images }) {
     const [imageIndex, setImageIndex] = useState(1);
 
     const maxIndex = 3;
@@ -26,7 +26,7 @@ function Carousel({ className, altField, images }) {
                 <img
                     className={className}
                     src={images[`image${imageIndex}`]}
-                    alt={altField}
+                    alt={images.alt}
                 />
             )}
             <button className="carousel__button" onClick={goToNext}>
