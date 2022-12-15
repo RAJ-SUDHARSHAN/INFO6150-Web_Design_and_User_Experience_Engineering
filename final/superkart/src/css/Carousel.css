@@ -1,0 +1,117 @@
+/* Adapted from https://css.gg/arrow-left-r per the MIT License https://css.gg/doc/license*/
+
+.gg-arrow-left-r {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  transform: scale(var(--ggs, 1));
+  border-radius: 4px
+}
+
+.gg-arrow-left-r::after,
+.gg-arrow-left-r::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 4px
+}
+
+.gg-arrow-left-r::after {
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  bottom: 6px
+}
+
+.gg-arrow-left-r::before {
+  width: 10px;
+  height: 2px;
+  bottom: 8px;
+  background: currentColor
+}
+
+/* Adapted from https://css.gg/arrow-right-r per the MIT License https://css.gg/doc/license*/
+
+.gg-arrow-right-r {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  transform: scale(var(--ggs, 1));
+  border-radius: 4px
+}
+
+.gg-arrow-right-r::after,
+.gg-arrow-right-r::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  right: 4px
+}
+
+.gg-arrow-right-r::after {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  bottom: 6px
+}
+
+.gg-arrow-right-r::before {
+  width: 10px;
+  height: 2px;
+  bottom: 8px;
+  background: currentColor
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin: 0;
+}
+
+.phones__card-content-pic {
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max(30%, 150px);
+}
+
+.carousel__button {
+  font-size: 1.5rem;
+  background-color: rgb(248, 245, 178);
+  cursor: pointer;
+  margin-top: 11.5rem;
+}
+
+.carousel__button:hover {
+  background-color: rgb(234, 230, 164);
+}
+
+@media screen and (min-width: 44rem) {
+  .phones__card-content-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 480px;
+  }
+
+  .carousel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: transparent;
+  }
+}

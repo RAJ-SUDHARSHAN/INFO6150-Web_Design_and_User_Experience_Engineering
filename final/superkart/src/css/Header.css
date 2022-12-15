@@ -1,0 +1,41 @@
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "header-logo header-title"
+        "header-nav header-nav"
+    ;
+    grid-template-columns: auto 1fr;
+
+    background: rgb(170, 236, 232);
+    background: linear-gradient(90deg, rgba(248, 245, 178) 0%, rgba(245, 149, 72, 1) 50%, rgba(248, 245, 178) 100%);
+
+}
+
+
+.header__skip-content {
+    position: absolute;
+    left: -100%;
+    display: inline;
+}
+
+.header__skip-content:focus {
+    left: 45%;
+}
+
+.header__logo {
+    grid-area: header-logo;
+}
+
+.header__title {
+    grid-area: header-title;
+
+    text-align: center;
+    color: rgb(8, 71, 78);
+    font-size: 2.5rem;
+}
+
+.header__nav {
+    grid-area: header-nav;
+
+}

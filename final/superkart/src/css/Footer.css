@@ -1,0 +1,31 @@
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #172337;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 5px;
+  list-style: none;
+}
+
+.footer__list>p {
+  color: grey;
+}
+
+.footer__link {
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  background-color: lightgrey;
+  color: black;
+}
